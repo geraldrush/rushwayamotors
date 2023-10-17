@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	         <meta charset='utf-8'>
+         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+         <title>Rushwaya Motots | Invoice </title>
+		 <link rel='stylesheet' href='css/styles.css'>
+		 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" sizes="192x192" href="images/android-chrome-192x192.png">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+		
+<script>
+      window.addEventListener("load", function(){   
+         // Retrieve the field/value pairs from the URL
+         var formData = location.search.slice(1);
+         formData = formData.replace(/\+/g," ");
+         formData = decodeURIComponent(formData);
+         let formFields = formData.split(/[&=]/g);
+
+         // Write the field values to the account table
+         document.getElementById("firstname").textContent = formFields[1]; 
+         document.getElementById("lastname").textContent = formFields[3]; 
+         document.getElementById("cliemail").textContent = formFields[5]; 
+         document.getElementById("cliphone").textContent = formFields[7];
+         document.getElementById("password").textContent = formFields[9];  
+         document.getElementById("reppassword").textContent = formFields[11];   
+        document.getElementById("bpqnty").textContent = formFields[13];
+		document.getElementById("bpprice").textContent = formFields[15];	
+         document.getElementById("prod1").textContent = formFields[17];      
+        document.getElementById("oeqnty").textContent = formFields[19]; 
+         document.getElementById("eoprice").textContent = formFields[21]; 
+         document.getElementById("eoil").textContent = formFields[23]; 
+        /* document.getElementById("address2Bill").textContent = formFields[25];
+         document.getElementById("cityBill").textContent = formFields[27];  
+         document.getElementById("stateBill").textContent = formFields[29];   
+         document.getElementById("countryBill").textContent = formFields[31];   
+         document.getElementById("codeBill").textContent = formFields[33];  */        
+      } );   
+   </script>
+   
+   </head>
+   <body>
+   <header>
+		<div id='nav'>
+				<nav>
+					<ul id="mainmenu"> 
+						<li id="logo"><a href="index.html"><img src='images/Rushwaya_Motors_logo.png'  alt="Rushwaya_Motors_logo" class='lg'></a></li>
+						<li class='menu'><a href='index.html'>Home</a></li>
+						<li class='menu' id='about'><a href='about.html'>About</a>
+							<ul id="drop">
+								<li class="submenu"><a href="staff.html">Staff</a></li>
+							</ul>
+						</li>
+						<li class='menu'><a href='product.html'>Services</a></li>
+						<li class='menu'><a href='form.html'>Bookings</a></li>
+						<li class='menu'><a href='contact.html'>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+   </header>
+   <main>
+	<div class="page">
+	
+		<article class="invoice">
+				<div class="logo"> 
+		
+					<img src="../images/Rushwaya_Motors_logo.PNG" alt="Rushwaya_Motors_logo" >
+				</div>
+			<h2 class="cname">Rushwaya Motors Invoice</h2>
+			<hr>
+	
+			<div class="details">
+				<div class="custinfo"> 
+					<h3>Client Details</h3>
+						Name:  <span id="firstname"></span><br>
+						Surname:  <span id="lastname"></span><br>
+						Password: <span id="password"></span><br>
+						Password: <span id="reppassword"></span><br>
+		
+		
+					<p class="inv">To<br>
+					Billing Adress: <span id="cliddress"></span><br>
+					Email: <span id="cliemail"></span><br>
+					Phone: <span id="cliphone"></span><br></p>
+				</div>
+	
+				<div class="companyinfo">
+					<h3>Company Infomation</h3>
+						Rushwaya Motors PTY LTD<br>
+						41 Nana Sita Street<br>
+						Pretoria CBD<br>
+						Pretoria.<br>
+						0001<br>
+	
+				<p class="inv">Phone : +277103454903<br>
+				Email: info@rushwayamotors.co.za</p>
+		
+				<p>Date:<span id="date"></span></p>
+				</div>
+			</div>
+	
+			<div class="prodtable">
+				<table class='invTable'>
+					<tr>
+						<th>Product</th>
+						<th>Quantity</th>
+						<th>Unit Price</th>
+						<th>Price</th>
+					</tr>
+
+					<tr>
+						<td><span id="prod1"></span></td>
+						<td><span id="qnty1"></span></td>
+						<td><span id="price1"></span></td>
+						<td><span id="bptotalprice"></span></td>
+					</tr>
+					<tr>
+						<td><span id="eoil"></span></td>
+						<td><span id="oeqnty"></span></td>
+						<td><span id="eoprice"></span></td>
+						<td><span id="eototalprice"></span></td>
+					</tr>
+					<tr>
+						<td><span id="6"></span></td>
+						<td><span id="7"></span></td>
+						<td><span id="8"></span></td>
+						<td><span id="9"></span></td>
+					</tr>
+					<tr>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+					</tr>
+					<tr>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+					</tr>
+					<tr>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+					</tr>
+					<tr>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+						<td><span id=""></span></td>
+					</tr>
+		
+				</table>
+			</div>
+		</article>
+	
+		<article class="cardinfo">
+			<h1 id="chead">Enter Your Credit Card Information</h1>
+			<div id='card'></div>
+		</article>
+		
+	</div>
+	
+	</main>
+	<footer>
+		Address: 
+			41 Nana Sita Street
+			Pretoria CBD
+			Pretoria.
+			0001.
+			
+			Phone: 0710354903
+			<h3>A proud member of RMI </h3>
+		<p>All Rights Reserved. &copy; Copyright 2022</p>
+
+</footer>
+</body>
+</html>

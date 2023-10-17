@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang='en'>
+     <head> <!--Head specifications-->
+         <meta charset='utf-8'>
+         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+         <title>Rushwaya Motors | Services</title>
+		 <<link rel='stylesheet' href='css/styles.css'>
+		 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" sizes="192x192" href="images/android-chrome-192x192.png">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+		<script src="script.js" defer></script>
+    </head>
+    	<body>
+		<header> <!-- The beginning of the head element and its subElements-->
+			<!--<div id='logo'><img src='images/Rushwaya_Motors_logo.png' class='lg'></div>-->
+			<div id='nav'>
+				<nav>
+					<ul id="mainmenu"> 
+						<li id="logo"><a href="index.html"><img src='images/Rushwaya_Motors_logo.png'  alt="Rushwaya_Motors_logo" class='lg'></a></li>
+						<li class='menu'><a href='index.html'>Home</a></li>
+						<li class='menu' id='about'><a href='about.html'>About</a>
+							<ul id="drop">
+								<li class="submenu"><a href="staff.html">Staff</a></li>
+							</ul>
+						</li>
+						<li class='menu'><a href='product.html'>Services</a></li>
+						<li class='menu'><a href='form.html'>Bookings</a></li>
+						<li class='menu'><a href='contact.html'>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		
+		</header>
+		<main>
+			<div id="hero">
+				<div class="hero-text"> 
+					<h1>RUSHWAYA MOTORS</h1>
+					<p>The Home of Perfection</p>
+				</div>
+				<!--<img src='images/banner.jpeg' alt='Banner image' id='front'>-->
+			</div>
+			
+			<div>
+		 <form id="orderform" name="orderform" method="get" action="invoice.html">
+	  <div id="cartype">
+		<fieldset>
+				<legend> Client Account Information</legend>
+				<div class="cinfo">
+				<ul>
+					<li><label for='fname'>First Name<input type='text' name='fname' id="fname" required></label><li>
+					<li><label for='lname'>Last Name<input type='text' name='lname' id="lname" required></label><li>
+					<li><label for='email'>Email<input type='text' name='email' id="email" required></label><li>
+					<li><label for='phone'>Phone<input type='tel' name='phone' id="phone" required></label><li>
+				</ul>
+				<ul>
+					<li><label for='password'>Password<input type='password' name='password' id="pwd1" required></label><li>
+					<li><label for='repeatpassword'>Repeat Password<input type='password' name='repeatpassword' id="pwd2" required></label><li>
+				<ul>
+				</div>
+				</fieldset>
+         <fieldset>
+            <legend>Make</legend>
+            <select id="make" size="4">
+               <option>Select Make</option>
+               <option>Buick</option>
+               <option>Honda</option>
+               <option>Nissan</option>
+               <option>Toyota</option>	
+            </select>            
+         </fieldset>
+
+         <fieldset>
+            <legend>Model</legend>
+            <select id="model" size="4">
+               <option>Select Model</option>
+               <option class="Buick">Enclave</option> 
+               <option class="Buick">Encore</option>
+               <option class="Buick">LaCrosse</option>
+               <option class="Honda">Accord</option> 
+               <option class="Honda">Civic</option>
+               <option class="Honda">Oddyssey</option>
+               <option class="Honda">Pilot</option>
+               <option class="Nissan">370Z</option> 
+               <option class="Nissan">Altima</option>
+               <option class="Nissan">Leaf</option>
+               <option class="Nissan">Rogue</option>            
+               <option class="Nissan">Sentra</option>  
+               <option class="Toyota">4Runner</option> 
+               <option class="Toyota">Camry</option>
+               <option class="Toyota">Corolla</option>
+               <option class="Toyota">RAV4</option>            
+               <option class="Toyota">Sienna</option>            
+            </select>            
+         </fieldset>
+
+         <fieldset>
+            <legend>Trim</legend>
+            <select id="trim" size="4">
+               <option>Select Trim</option>
+               <option class="Enclave">Convenience Group 4dr SUV (3.6L 6cyl 6A)</option>
+               <option class="Enclave">Leather Group 4dr SUV (3.6L 6cyl 6A)</option>
+               <option class="Enclave">Premium Group 4dr SUV (3.6L 6cyl 6A)</option>
+               <option class="Encore">4dr SUV (1.4L 4cyl Turbo 6A)</option>
+               <option class="Encore">Convenience 4dr SUV (1.4L 4cyl Turbo 6A)</option>
+               <option class="Encore">Premium 4dr SUV (1.4L 4cyl Turbo 6A)</option>
+               <option class="LaCrosse">4dr Sedan (2.4L 4cyl gas/electric hybrid 6A)</option>
+               <option class="LaCrosse">Leather Group 4dr Sedan AWD (3.6L 6cyl 6A)</option>
+               <option class="LaCrosse">Premium I Group 4dr Sedan (3.6L 6cyl 6A)</option>
+               <option class="LaCrosse">Premium II Group 4dr Sedan (3.6L 6cyl 6A)</option>          
+               <option class="Accord">EX 2dr Coupe (2.4L 4cyl 6M)</option>
+               <option class="Accord">EX-L 4dr Sedan (2.4L 4cyl CVT)</option>
+               <option class="Accord">LX 4dr Sedan (2.4L 4cyl 6M)</option>
+               <option class="Accord">Sport 4dr Sedan (2.4L 4cyl 6M)</option>
+               <option class="Civic">EX 4dr Sedan (1.8L 4cyl CVT)</option>
+               <option class="Civic">LX 2dr Coupe (1.8L 4cyl 5M)</option>
+               <option class="Civic">4dr Sedan (2.4L 4cyl gas/electric hybrid 6A)</option>
+               <option class="Civic">Natural Gas 4dr Sedan (1.8L 4cyl 5A)</option>
+               <option class="Oddyssey">EX 4dr Minivan (3.5L 6cyl 6A)</option>
+               <option class="Oddyssey">LX 4dr Minivan (3.5L 6cyl 6A)</option>
+               <option class="Oddyssey">Touring 4dr Minivan (3.5L 6cyl 6A)</option> 
+               <option class="Pilot">EX 4dr SUV (3.5L 6cyl 5A)</option>
+               <option class="Pilot">LX 4dr SUV (3.5L 6cyl 5A)</option>              
+               <option class="370Z">2dr Coupe (3.7L 6cyl 7A)</option>
+               <option class="370Z">Sport 2dr Coupe (3.7L 6cyl 6M)</option>
+               <option class="370Z">Touring 2dr Coupe (3.7L 6cyl 7A)</option>
+               <option class="Altima">2.5 4dr Sedan (2.5L 4cyl CVT)</option>
+               <option class="Altima">3.5 SL 4dr Sedan (3.5L 6cyl CVT)</option>
+               <option class="Leaf">S 4dr Hatchback (electric DD)</option>
+               <option class="Leaf">SL 4dr Hatchback (electric DD)</option>
+               <option class="Leaf">SV 4dr Hatchback (electric DD)</option>
+               <option class="Rogue">S 4dr SUV (2.5L 4cyl CVT)</option>
+               <option class="Rogue">SV 4dr SUV AWD (2.5L 4cyl CVT)</option>             
+               <option class="Sentra">FE+ S 4dr Sedan (1.8L 4cyl CVT)</option>
+               <option class="Sentra">S 4dr Sedan (1.8L 4cyl 6M)</option>
+               <option class="Sentra">SL 4dr Sedan (1.8L 4cyl CVT)</option> 
+               <option class="4Runner">Limited 4dr SUV (4.0L 6cyl 5A)</option>
+               <option class="4Runner">SR5 4dr SUV (4.0L 6cyl 5A)</option>
+               <option class="4Runner">Trail 4dr SUV 4WD (4.0L 6cyl 5A)</option>
+               <option class="4Runner">TRD PRO 4dr SUV 4WD (4.0L 6cyl 5A)</option>
+               <option class="Camry">LE 4dr Sedan (2.5L 4cyl 6A)</option>
+               <option class="Camry">SE 4dr Sedan (2.5L 4cyl 6A)</option>
+               <option class="Camry">XLE 4dr Sedan (3.5L 6cyl 6A)</option>
+               <option class="Camry">XSE 4dr Sedan (3.5L 6cyl 6A)</option>
+               <option class="Corolla">L 4dr Sedan (1.8L 4cyl 4A)</option>
+               <option class="Corolla">LE Plus 4dr Sedan (1.8L 4cyl CVT)</option>             
+               <option class="Corolla">S 4dr Sedan (1.8L 4cyl CVT)</option>
+               <option class="RAV4">LE 4dr SUV (2.5L 4cyl 6A)</option>
+               <option class="RAV4">Limited 4dr SUV (2.5L 4cyl 6A)</option>  
+               <option class="RAV4">XLE 4dr SUV (2.5L 4cyl 6A)</option>   
+               <option class="RAV4">LE 4dr SUV (2.5L 4cyl 6A)</option>
+               <option class="Sienna">L 7-Passenger 4dr Minivan (3.5L 6cyl 6A)</option>  
+               <option class="Sienna">Limited 7-Passenger 4dr Minivan (3.5L 6cyl 6A)</option>                     
+            </select>              
+         </fieldset>
+		 <fieldset>
+			<legend>Products</legend>
+			<label for="brakepads"><input type="checkbox" name="Brake pads Set" id="chckbrakepads">Brake Pads Set</label>
+			<label for="engineoil"><input type="checkbox" name="Engine oil per liter" id="chckengineoil">Engine Oil per liter</label>
+			<label for="oilfilter"><input type="checkbox" name="Oil Filter" id="chckoilfilter">Oil Filter</label>
+			<label for="sparkplug"><input type="checkbox" name="Spark Plug" id="chcksparkplug">Spark Plug</label>
+			<label for="servckit"><input type="checkbox" name="Service Kit" id="chckservckit">Service Kit</label>
+		 </fieldset>
+		 </div>
+		 <div id="button">
+		 <input type="button" value="Confirm" id="selectVehicle" />
+		 </div>
+		 
+		  <p id="vehicle" ></p>
+		 <table id="pTable">
+			<caption>Products</caption>
+			
+			<tr>
+					<th>Items</th>
+					<th>Quantity</th>
+					<th>Price in Rands (R)</th>
+			</tr>
+			<tr>
+				<td ><input type="text" name='productname1' class="productname" id='productname1' readonly></td>
+				<td ><input type="number" name='Quantity1' id='qty1' min='1' max='1000' class="quantity"></td>
+				<td><input type="number" name='price1' id='price1' class="price" readonly></td>	
+			</tr>
+			<tr>
+				<td><input type="text" name='productname2' class="productname" id='productname3' readonly></td>
+				<td><input type="number" name='Quantity2' id='qty2' min='1' max='1000' class="quantity"></td>
+				<td><input type="number" name='price2' id='price2' class="price" readonly></td>
+			</tr>
+			<tr>
+				<td><input type="text" name='productname3' class="productname" id='productname3' readonly></td>
+				<td><input type="number" name='Quantity3' id='qty3' min='1' max='1000' class="quantity"></td>
+				<td><input type="number" name='price3' id='price3' class="price" readonly></td>
+			</tr>
+			<tr>
+				<td><input type="text" name='productname4' class="productname" id='productname4' readonly></td>
+				<td><input type="number" name='Quantity4' id='qty4' min='1' max='1000'  class="quantity"></td>
+				<td><input type="number" name='price4' id='price4' class="price" readonly></td>
+			</tr>
+			<tr>
+				<td><input type="text" name='productname5' class="productname" id='productname5' readonly></td>
+				<td><input type="number" name='Quantity5' id='qty5' min='1' max='1000'  class="quantity"></td>
+				<td><input type="number" name='price5' id='price5' class="price" readonly></td>
+			</tr>
+		 </table>
+		 
+        <div id="invbutton">
+		 <input type="submit" value="Create Invoice" id="invcbutton" />
+		 </div>
+      </form> 
+						
+				
+				
+
+			
+			</div>
+		
+		</main>
+		<footer>
+				
+			Address: 
+			41 Nana Sita Street
+			Pretoria CBD
+			Pretoria.
+			0001.
+			
+			Phone: 0710354903
+			<h3>A proud member of RMI </h3>
+		<p>All Rights Reserved. &copy; Copyright 2022</p>
+		</footer>
+    </body>
+</html>

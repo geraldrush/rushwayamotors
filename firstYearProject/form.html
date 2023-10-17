@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+     <head> <!--Head specifications-->
+         <meta charset='utf-8'>
+         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+         <title>Rushwaya Motors | Bookings </title>
+		 <link rel='stylesheet' href='css/styles.css'>
+		 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" sizes="192x192" href="images/android-chrome-192x192.png">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<header> <!-- The beginning of the head element and its subElements-->
+			<!--<div id='logo'><img src='images/Rushwaya_Motors_logo.png' class='lg'></div>-->
+			<div id='nav'>
+				<div id='nav'>
+				<nav>
+					<ul> 
+						<li id="logo"><a href="index.html"><img src='images/Rushwaya_Motors_logo.png'  alt="Rushwaya_Motors_logo" class='lg'></a></li>
+						<li class='menu'><a href='index.html'>Home</a></li>
+						<li class='menu'><a href='about.html'>About</a></li>
+						<li class='menu'><a href='product.html'>Services</a></li>
+						<li class='menu'><a href='form.html'>Bookings</a></li>
+						<li class='menu'><a href='contact.html'>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		
+		</header>
+		<main>
+			<div id="hero">
+				<div class="hero-text"> 
+					<h1>RUSHWAYA MOTORS</h1>
+					<p>The Home of Perfection</p>
+				</div>
+				<!--<img src='images/banner.jpeg' alt='Banner image' id='front'>-->
+			</div>
+
+			<!--Form element strats here-->
+			<form>
+			<h2 id="hform">Client Booking Form</h2>
+				<fieldset>
+					<legend>Client Information</legend>
+						<label>First Name<input name="fname" type="text" size="25"></label>
+						<label>Last Name<input name="lname" type="text" size="25"></label>
+						<label for='email'>Email<input type='email' name='email' id="email"></label>
+						<label for='phone'>Phone<input type='tel' name='phone' id="phone"></label>
+						<label for="brand" class="large-label">What brand is your car?</label>
+							<select id="brand">
+								<option value="Mercedes Benz">Mercedes Benz</option>
+								<option value="BMW">BMW</option>
+								<option value="Audi">Audi</option>
+								<option value="VW">VW</option>
+								<option value="other">Other</option>
+							</select>
+							<label class="large-label">Is your car insured?</label>
+							<label for="yes" class="small-label"><input type="radio" name="insured" id="yes" value="yes">Yes</label>
+							<label for="no" class="small-label"><input type="radio" name="insured" id="no" value="no">No</label>
+						
+				</fieldset>
+				<fieldset>
+					<legend>What kind of service?</legend>
+						<label for="engine"><input type="checkbox" id="engine" value="Engine Repairs" name="engine">Engine Repairs</label>
+						<label for="suspension"><input type="checkbox" id="suspension" value="Suspension Repair" name="suspension">Suspension Repair</label>
+						<label for="cservice"><input type="checkbox" id="cservice" value="Car Service" name="cservice">Car Service</label>
+						<label>Please tell us any additional information</label>
+						<textarea name="feedback" rows="5" cols="100"></textarea>
+				</fieldset>
+				<button type="submit" id="btn">Submit Booking</button>
+			</form>
+			</main>
+			<footer>
+				
+					Address: 
+					41 Nana Sita Street
+					Pretoria CBD
+					Pretoria.
+					0001.
+			
+					Phone: 0710354903
+				<h3>A proud member of RMI </h3>
+				<p>All Rights Reserved. &copy; Copyright 2022</p>
+			</footer>
